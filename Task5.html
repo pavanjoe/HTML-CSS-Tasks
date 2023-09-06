@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <style>
+        .container, .header, .reg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .labels{
+            padding-inline: 50px;
+        }
+        #head{
+            color: blue;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"]
+        {
+            width: 98%;
+        }
+        table {
+        border-collapse: collapse; 
+        border: 2px solid black;
+        }
+        th, td {
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 id="head">Registration form</h2>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <th class="labels"><label for="">First Name</label></th>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Last Name</label></th>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Email</label></th>
+                <td><input type="email" /></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Password</label></th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Re-enter Password</label></th>
+                <td><input type="password" /></td>
+            </tr>
+            <tr>
+                <th class="labels" rowspan="2"><label for="">Gender:</label></th>
+                <td><input type="radio" name="gen" value="male">Male</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gen" value="female">Female</td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Age:</label></th>
+                <td><input type="number" /></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Phone Number</label></th>
+                <td><input type="number" /></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Gender:</label></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Address</label></th>
+                <td><textarea id="address" name="address" rows="5" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+            <tr>
+                <th class="labels"><label for="">State</label></th>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <th class="labels"><label for="">Country</label></th>
+                <td>
+                    <select id="country" name="country">
+                        <option value="" disabled selected>Choose your country  </option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="france">France</option>
+                        <option value="germany">Germany</option>
+                        <option value="japan">Japan</option>
+                        <option value="india">India</option>
+                        <option value="china">China</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="south-africa">South Africa</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="italy">Italy</option>
+                        <option value="spain">Spain</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="russia">Russia</option>
+                        <option value="south-korea">South Korea</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="sweden">Sweden</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Languages known</th>
+                <td>
+                    <input type="checkbox" name="lang[]" /> English   
+                    <input type="checkbox" name="lang[]" /> Kannada
+                    <input type="checkbox" name="lang[]" /> Hindi
+                    <input type="checkbox" name="lang[]" /> Telugu
+                </td>
+            </tr>
+                <td colspan="2"><input type="checkbox" name="" />Hereby I declare all the given details are true</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">Log in to <a href="https://ethnus.com/">Ethnus</a> website</td>
+            </tr>
+        </table>
+    </div>
+    <div class="reg">
+        <br><br><br><br>
+        <input type="submit" value="Register">
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh; 
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .vertical-navbar {
+            width: 200px;
+            background-color: lightcyan;
+            color: blue;
+            padding: 0;
+            margin: 0;
+        }
+
+        .vertical-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .vertical-navbar li {
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        .vertical-navbar a {
+            text-decoration: none;
+            color: blue;
+            display: block;
+            padding-left: 10px;
+        }
+
+        .vertical-navbar li:first-child {
+            background-color: orange;
+        }
+
+        .vertical-navbar li:first-child a{
+            color: white;
+        }
+
+        .horizontal-navbar {
+            background-color: lightgrey;
+            color: #fff;
+            width: 19%;
+        }
+
+        .horizontal-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .horizontal-navbar li {
+            padding: 10px;
+            text-align: center;
+            border-right: 1px solid blue;
+        }
+
+        .horizontal-navbar a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .horizontal-navbar ul li:first-child {
+            background-color: grey;
+        }
+
+        .horizontal-navbar ul li:first-child a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div><h4>Vertical Navigation Bar</h4></div>
+    <div class="vertical-navbar">
+        <ul>
+            <li><a href="https://www.google.com/search?q=home&sca_esv=562574765&hl=en&tbm=isch&sxsrf=AB5stBi7D9R-249AV02MP50L-7EgORYXsg%3A1693849809925&source=hp&biw=1536&bih=739&ei=0Rj2ZKfuM8632roPzNeU-A0&iflsig=AD69kcEAAAAAZPYm4aU1JKZXrC4aGUbm_8NGb1rkyKzY&ved=0ahUKEwjnmuChwpGBAxXOm1YBHcwrBd8Q4dUDCAc&uact=5&oq=home&gs_lp=EgNpbWciBGhvbWUyCBAAGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAESLkDUABYlQJwAHgAkAEBmAGLAaAB-wKqAQMzLjG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ8ICBBAjGCfCAgQQABgDwgILEAAYgAQYsQMYgwE&sclient=img">Home</a></li>
+            <li><a href="https://www.google.com/search?q=java&tbm=isch&ved=2ahUKEwji_cqxwpGBAxXG2jgGHdh_B-AQ2-cCegQIABAA&oq=java&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgQIABADMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgsIABCABBCxAxCDAToECCMQJzoHCAAQigUQQzoICAAQsQMQgwE6CggAEIoFELEDEEM6BQgAEIAEUNkGWJsLYI0MaABwAHgAgAFliAGAA5IBAzMuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=8xj2ZKK4A8a14-EP2P-dgA4&bih=739&biw=1536&hl=en">Java</a></li>
+            <li><a href="https://www.google.com/search?q=html&tbm=isch&ved=2ahUKEwie2-jBwpGBAxV2zaACHQS-CHgQ2-cCegQIABAA&oq=html&gs_lcp=CgNpbWcQAzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzINCAAQigUQsQMQgwEQQzILCAAQgAQQsQMQgwEyCAgAEIAEELEDMgsIABCABBCxAxCDATIHCAAQigUQQzIHCAAQigUQQzoECCMQJzoECAAQAzoFCAAQgAQ6CAgAELEDEIMBUOIHWPoTYIsXaAJwAHgAgAFdiAHfBJIBATeYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=FRn2ZN78Bfaag8UPhPyiwAc&bih=739&biw=1536&hl=en">HTML</a></li>
+            <li><a href="https://www.google.com/search?q=css&tbm=isch&ved=2ahUKEwj9gdrMwpGBAxUm7DgGHVpmCvEQ2-cCegQIABAA&oq=css&gs_lcp=CgNpbWcQAzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIHCAAQigUQQzIFCAAQgAQyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyCAgAEIAEELEDOgQIIxAnOgsIABCABBCxAxCDAToHCCMQ6gIQJzoICAAQsQMQgwFQ1ANYqw5gmQ9oAXAAeAKAAW6IAfMEkgEDNS4ymAEAoAEBqgELZ3dzLXdpei1pbWewAQjAAQE&sclient=img&ei=Kxn2ZL3AOKbY4-EP2sypiA8&bih=739&biw=1536&hl=en">CSS</a></li>
+            <li><a href="https://www.google.com/search?q=bootstrap&tbm=isch&ved=2ahUKEwjBstnUwpGBAxXA5TgGHQvrB7AQ2-cCegQIABAA&oq=boots&gs_lcp=CgNpbWcQARgAMgoIABCKBRCxAxBDMgoIABCKBRCxAxBDMgcIABCKBRBDMgcIABCKBRBDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgcIABCKBRBDMgcIABCKBRBDMggIABCABBCxAzoECCMQJzoFCAAQgAQ6CAgAELEDEIMBOgsIABCABBCxAxCDAVDiBVjYC2D_EGgAcAB4AIABaogBuwSSAQM0LjKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=PBn2ZMGkKsDL4-EPi9afgAs&bih=739&biw=1536&hl=en">Bootstrap</a></li>
+        </ul>
+    </div>
+    <div><h4>Horizontal Navigation Bar</h4></div>
+    <div class="horizontal-navbar">
+            <ul>
+                <li><a href="https://www.google.com/search?q=home&sca_esv=562574765&hl=en&tbm=isch&sxsrf=AB5stBi7D9R-249AV02MP50L-7EgORYXsg%3A1693849809925&source=hp&biw=1536&bih=739&ei=0Rj2ZKfuM8632roPzNeU-A0&iflsig=AD69kcEAAAAAZPYm4aU1JKZXrC4aGUbm_8NGb1rkyKzY&ved=0ahUKEwjnmuChwpGBAxXOm1YBHcwrBd8Q4dUDCAc&uact=5&oq=home&gs_lp=EgNpbWciBGhvbWUyCBAAGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAESLkDUABYlQJwAHgAkAEBmAGLAaAB-wKqAQMzLjG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ8ICBBAjGCfCAgQQABgDwgILEAAYgAQYsQMYgwE&sclient=img">Home</a></li>
+                <li><a href="https://www.google.com/search?q=java&tbm=isch&ved=2ahUKEwji_cqxwpGBAxXG2jgGHdh_B-AQ2-cCegQIABAA&oq=java&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgQIABADMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgsIABCABBCxAxCDAToECCMQJzoHCAAQigUQQzoICAAQsQMQgwE6CggAEIoFELEDEEM6BQgAEIAEUNkGWJsLYI0MaABwAHgAgAFliAGAA5IBAzMuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=8xj2ZKK4A8a14-EP2P-dgA4&bih=739&biw=1536&hl=en">Java</a></li>
+                <li><a href="https://www.google.com/search?q=html&tbm=isch&ved=2ahUKEwie2-jBwpGBAxV2zaACHQS-CHgQ2-cCegQIABAA&oq=html&gs_lcp=CgNpbWcQAzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzINCAAQigUQsQMQgwEQQzILCAAQgAQQsQMQgwEyCAgAEIAEELEDMgsIABCABBCxAxCDATIHCAAQigUQQzIHCAAQigUQQzoECCMQJzoECAAQAzoFCAAQgAQ6CAgAELEDEIMBUOIHWPoTYIsXaAJwAHgAgAFdiAHfBJIBATeYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=FRn2ZN78Bfaag8UPhPyiwAc&bih=739&biw=1536&hl=en">HTML</a></li>
+                <li><a href="https://www.google.com/search?q=css&tbm=isch&ved=2ahUKEwj9gdrMwpGBAxUm7DgGHVpmCvEQ2-cCegQIABAA&oq=css&gs_lcp=CgNpbWcQAzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIKCAAQigUQsQMQQzIHCAAQigUQQzIFCAAQgAQyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyCAgAEIAEELEDOgQIIxAnOgsIABCABBCxAxCDAToHCCMQ6gIQJzoICAAQsQMQgwFQ1ANYqw5gmQ9oAXAAeAKAAW6IAfMEkgEDNS4ymAEAoAEBqgELZ3dzLXdpei1pbWewAQjAAQE&sclient=img&ei=Kxn2ZL3AOKbY4-EP2sypiA8&bih=739&biw=1536&hl=en">CSS</a></li>
+            </ul>
+    </div>
+</body>
+</html>
